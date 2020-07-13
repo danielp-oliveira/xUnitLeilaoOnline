@@ -4,6 +4,30 @@ using Xunit;
 namespace Alura.LeilaoOnline.Tests {
     public class LeilaoTestes {
         [Fact]
+        public void LeilaoComVariosClientes () {
+            //Given
+            var leilao = new Leilao ("Van Gogh");
+            var fulano = new Interessada ("Fulano", leilao);
+            var maria = new Interessada ("Maria", leilao);
+            var beltrano = new Interessada ("Beltrano", leilao);
+
+            leilao.RecebeLance (fulano, 800);
+            leilao.RecebeLance (maria, 900);
+            leilao.RecebeLance (fulano, 1000);
+            leilao.RecebeLance (maria, 990);
+            leilao.RecebeLance (beltrano, 1400);
+
+            //When
+            leilao.TerminaPregao ();
+
+            //Then
+            var valorEsperado = 1400;
+            var valorObtido = leilao.Ganhador.Valor;
+            Assert.Equal (valorEsperado, valorObtido);
+            Assert.Equal (beltrano, leilao.Ganhador.Cliente);
+        }
+
+        [Fact]
         public void LeilaoComVariosLances () {
             //Given
             var leilao = new Leilao ("Van Gogh");
