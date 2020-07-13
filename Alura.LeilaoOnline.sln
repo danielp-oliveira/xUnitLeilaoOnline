@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0C37F530
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alura.LeilaoOnline.Core", "Alura.LeilaoOnline.Core\Alura.LeilaoOnline.Core.csproj", "{252D6E19-AADC-49D6-B988-CAA2D397F783}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alura.LeilaoOnline.Tests", "Alura.LeilaoOnline.Tests\Alura.LeilaoOnline.Tests.csproj", "{A077E035-8983-422A-B927-CA8681BC0B34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,8 +36,21 @@ Global
 		{252D6E19-AADC-49D6-B988-CAA2D397F783}.Release|x64.Build.0 = Release|Any CPU
 		{252D6E19-AADC-49D6-B988-CAA2D397F783}.Release|x86.ActiveCfg = Release|Any CPU
 		{252D6E19-AADC-49D6-B988-CAA2D397F783}.Release|x86.Build.0 = Release|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Debug|x64.Build.0 = Debug|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Debug|x86.Build.0 = Debug|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Release|x64.ActiveCfg = Release|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Release|x64.Build.0 = Release|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Release|x86.ActiveCfg = Release|Any CPU
+		{A077E035-8983-422A-B927-CA8681BC0B34}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{A077E035-8983-422A-B927-CA8681BC0B34} = {0C37F530-C490-11EA-9372-57D0E984E828}
 		{252D6E19-AADC-49D6-B988-CAA2D397F783} = {05888830-C490-11EA-9372-57D0E984E828}
 	EndGlobalSection
 EndGlobal
